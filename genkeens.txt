@@ -1,6 +1,6 @@
 pipeline{
 	agent any
-		stage{
+		stages{
 			stage('first stage'){
 				step{
                                      git 'https://github.com/SQMEER/jenkins.git' 
