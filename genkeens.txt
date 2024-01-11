@@ -1,0 +1,26 @@
+pipeline{
+	agent any
+		stage{
+			stage('first stage'){
+				step{
+                                     git '' 
+                                    } 
+			stage('second stage'){
+				step{
+				build 'filename'
+				    }
+
+				}
+
+			stage('third stage'){
+				step{
+					echo 'this is the testing phase'
+				    }
+				}
+			stage('fourth stage'){
+				step{
+					echo 'This is deploy stage'
+				}
+			}
+                    }
+}
