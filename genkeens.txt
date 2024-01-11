@@ -3,8 +3,9 @@ pipeline{
 		stage{
 			stage('first stage'){
 				step{
-                                     git '' 
+                                     git 'https://github.com/SQMEER/jenkins.git' 
                                     } 
+                               }
 			stage('second stage'){
 				step{
 				build 'filename'
@@ -20,7 +21,7 @@ pipeline{
 			stage('fourth stage'){
 				step{
 					echo 'This is deploy stage'
-				}
-			}
+				    }
+			        }
                     }
-}
+       }
